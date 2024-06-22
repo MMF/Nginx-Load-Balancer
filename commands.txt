@@ -9,6 +9,6 @@ docker run -d -p 3002:3000 --name node_app_2 -e SERVER_NAME=NodeApp2 node_app:la
 ------------------------------------------------------------------------------------
 
 
-docker build -t nginx_lb ./nginx_conf
+docker build -t nginx_lb ./nginx_server
 
 docker run -d -p 8080:80 --name nginx_lb --link node_app_1 --link node_app_2 nginx_lb:latest

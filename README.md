@@ -18,7 +18,7 @@ docker run -d -p 3002:3000 --name node_app_2 -e SERVER_NAME=NodeApp2 node_app:la
 
 Build Nginx image
 ```
-docker build -t nginx_lb ./nginx_conf
+docker build -t nginx_lb ./nginx_server
 ```
 
 Run Nginx Load Balancer Container
